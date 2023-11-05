@@ -1,0 +1,353 @@
+/*  1388px
+    1280px  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Clash Display', sans-serif;
+}
+
+.huge-container {
+    max-width: 1388px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav img{
+    cursor: pointer;
+}
+
+header .top .huge-container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0000001A;
+}
+
+header .top .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .bottom .container {
+    padding: 14px 0;
+}
+
+header .bottom ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+header .bottom ul a {
+    font-family: 'Satoshi', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #726E8D;
+}
+
+.hero {
+    display: flex;
+    padding: 60px 0;
+}
+
+.hero .left {
+    padding: 60px;
+    background-color: #2A254B;
+}
+
+.hero h1 {
+    width: 500px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44.8px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    font-family: 'Satoshi', sans-serif;
+    padding: 16px 32px;
+    background-color: #F9F9F926;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 200px;
+}
+
+.hero p {
+    font-family: 'Satoshi', sans-serif;
+    width: 602px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* main > services */
+.services {
+    padding: 60px 0;
+}
+
+.services h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2A254B;
+    margin-bottom: 50px;
+}
+
+.services .block {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.services img {
+    margin-bottom: 16px;
+}
+
+.services h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #2A254B;
+    margin-bottom: 8px;
+}
+
+.services p {
+    font-family: 'Satoshi', sans-serif;
+}
+
+main .news, main .popular {
+    padding: 80px 0 60px;
+}
+
+main section .title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #2A254B;
+    margin-bottom: 24px;
+}
+
+main section .view {
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    background: #F9F9F9;
+    border: none;
+    font-size: 16px;
+    color: #2A254B;
+}
+
+main .products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+main .product img {
+    margin-bottom: 22px;
+}
+
+main .product h5 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #2A254B;
+    margin-bottom: 8px;
+}
+
+main .product p {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 18px;
+    color: #2A254B;
+}
+
+main .sign-up {
+    background-color: #F9F9F9;
+    padding: 60px 0;
+}
+
+main .sign-up .container {
+    background-color: white;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+main .sign-up h1 {
+    font-weight: 400;
+    font-size: 32px;
+    color: #2A254B;
+    margin-bottom: 16px;
+}
+
+main .sign-up p {    
+    width: 470px;
+    font-family: 'Satoshi', sans-serif;
+    line-height: 24px;
+    color: #2A254B;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+main .sign-up form {
+    display: flex;
+    justify-content: center;
+}
+
+main .sign-up input {
+    width: 360px;
+    border: none;
+    outline: none;
+    background-color: #F9F9F9;
+    font-size: 16px;
+    color: #2A254B;
+    padding-left: 32px;
+}
+
+main .sign-up button {
+    font-family: 'Satoshi', sans-serif;
+    padding: 16px 32px;
+    background-color: #2A254B;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+/* ######################################################## */
+
+header .top .right-mobile,
+.hero-button-mobile {
+    display: none;
+}
+
+@media (max-width: 467px) {
+    header .top .huge-container {
+        padding: 16px 24px;
+        border: none;
+    }
+
+    header .top .huge-container > img:nth-child(1), 
+    header .top .huge-container .right,
+    header .bottom,
+    .hero img,
+    .hero-button-desktop,
+    main .popular .products .product:nth-child(1) {
+        display: none;
+    }
+
+    header .top .right-mobile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .hero .left {
+        padding-top: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        width: auto;
+        margin-bottom: 60px;
+    }
+
+    .hero p {
+        width: auto;
+        margin-bottom: 100px;
+        margin-bottom: 24px;
+    }
+
+    .hero-button-mobile {
+        display: block;
+        margin-bottom: 0px !important;
+        width: 100%;
+    }
+    
+
+    /* main > services */
+
+    main .services {
+        padding: 40px 24px;
+    }
+
+    main .services h2 {
+        text-align: left;
+    }
+
+    main .services .block {
+        flex-direction: column;
+    }
+
+    main section .title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    main .products {
+        flex-wrap: wrap;
+    }
+
+    main .products, main section .title {
+        padding: 0 5vw;
+    }
+
+    main .product img {
+        width: 40vw;
+        gap: 5vw;
+    }
+
+    main .product p {
+        margin-bottom: 20px;
+    }
+
+    main section .view {
+        width: 90vw;
+    }
+
+    main .sign-up {
+        padding: 0;
+    }
+
+    main .sign-up h1 {
+        font-size: 20px;
+        color: #2A254B;
+        margin-bottom: 12px;
+    }
+    
+    main .sign-up p {    
+        width: auto;
+        font-size: 14px;
+        font-family: 'Satoshi', sans-serif;
+        line-height: 21px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+
+
+}
+
